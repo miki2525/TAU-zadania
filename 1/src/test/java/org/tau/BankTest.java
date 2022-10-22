@@ -55,7 +55,8 @@ class BankTest {
     }
 
     @Test
-    void shouldSearchBank() {
-        assertTrue(bank.search("1234"));
+    void shouldFindBankAccount() {
+        String accountNumber = "1234";
+        assertTrue(bank.search(accountNumber));
     }
 }
