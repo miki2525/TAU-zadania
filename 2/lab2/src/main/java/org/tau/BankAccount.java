@@ -1,25 +1,24 @@
 package org.tau;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 
-public class Bank {
+public class BankAccount {
+
     private String accno;
     private String name;
     private AccType acc_type;
     private long balance;
 
-    public Bank(String accno, String name, AccType acc_type, long balance) {
+    private String owner;
+
+    public BankAccount(String accno, String name, AccType acc_type, long balance, String owner) {
         this.accno = accno;
         this.name = name;
         this.acc_type = acc_type;
         this.balance = balance;
+        this.owner = owner;
     }
 
-    public Bank() {
-
-    }
+    public BankAccount() {}
 
     //method to display account details
     public String showAccount() {
@@ -27,7 +26,8 @@ public class Bank {
                 "Name of account holder: " + name +
                         ", Account no.: " + accno +
                         ", Account type: " + acc_type +
-                        ", Balance: " + balance;
+                        ", Balance: " + balance +
+                        ", Owner: " + owner;
     }
 
     //method to deposit money
@@ -53,7 +53,7 @@ public class Bank {
     }
 
     //method to search an account number
-    public boolean search(String ac_no) {
+    public boolean doesExist(String ac_no) {
         if (accno.equals(ac_no)) {
             System.out.println(showAccount());
             return (true);
@@ -75,5 +75,9 @@ public class Bank {
 
     public long getBalance() {
         return balance;
+    }
+
+    public String getOwner() {
+        return owner;
     }
 }
