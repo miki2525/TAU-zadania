@@ -42,8 +42,8 @@
 <li>Sprawdzenie czy są jakiekolwiek smaki: <b><u>> 0</u></b></li>
 <li>Kliknięcie w pierwszy wariant smaku/li>
 <li>Kliknięcie w przycisk "DODAJ DO KOSZYKA"/li>
-<li>Sprawdzenie czy pojawiło się okno z potwierdzeniem dodania produktu do koszyka: <b><u>TAK</u></b>/li>
-<li>Sprawdzenie czy produkt został dodany do koszyka: <b><u>"PRODUKT ZOSTAŁ DODANY"</u></b>/li>
+<li>Sprawdzenie czy pojawiło się okno z potwierdzeniem dodania produktu do koszyka: <b><u>TAK</u></b></li>
+<li>Sprawdzenie czy produkt został dodany do koszyka: <b><u>"PRODUKT ZOSTAŁ DODANY"</u></b></li>
 </ol>
 ======================================================================
 
