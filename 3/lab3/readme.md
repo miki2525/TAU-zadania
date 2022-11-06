@@ -1,6 +1,5 @@
 <h1>Lab 3: Selenium</h1>
 
-
 <h2>Model testowania</h2>
 
 <h3>Użyte technologie i biblioteki:</h3>
