@@ -18,7 +18,6 @@ public class Scenario1 {
     private final static String COOCKIE_DIALOG = "cm";
     private final static String INPUT_SEARCH_FIELD = "Białko";
     private final static String RESULT_NOT_FOUND = "NIE ZNALEZIONO PRODUKTÓW";
-
     private final static String ADDED_TO_BASKET_CONFIRM = "PRODUKT ZOSTAŁ DODANY";
 
     @BeforeAll
