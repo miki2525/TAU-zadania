@@ -36,8 +36,12 @@
 </li>
 <li>Wpisanie w pole "Szukaj..." słowa: "Białko" i wciśnięcie 'Enter'</li>
 <li>Sprawdzenie czy znaleziono jakieś produkty</li>
-<li>Kliknięcie na perwszy produkt z listy</li>
-<li>Kliknięcie w przycisk "WYBIERZ SMAK"</li>
+<li>Kliknięcie na pierwszy produkt z listy</li>
 <li>Kliknięcie w przycisk "WYBIERZ SMAK"</li>
 <li>Sprawdzenie czy okno ze smakami się pojawia</li>
+<li>Sprawdzenie czy są jakiekolwiek smaki/li>
+<li>Kliknięcie w pierwszy wariant smaku/li>
+<li>Kliknięcie w przycisk "DODAJ DO KOSZYKA"/li>
+<li>Sprawdzenie czy pojawiło się okno z potwierdzeniem dodania produktu do koszyka/li>
+<li>Sprawdzenie czy produkt został dodany do koszyka/li>
 </ol>
