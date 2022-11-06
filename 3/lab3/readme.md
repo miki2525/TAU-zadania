@@ -15,7 +15,7 @@
 <li>Mozilla Firefox</li>
 <li>Google Chrome</li>
 </ul>
-
+---
 
 <h2>Scenariusze</h2>
 
@@ -68,3 +68,4 @@
 <li>Wpisanie w pole "LOGIN LUB EMAIL:" loginu: <b><ins>loginDoesNotExist</ins></b></li>
 <li>Sprawdzenie czy pojawił się komunikat: <b><ins>NIE ZNALEZIONO PODANEGO LOGINU/ADRESU EMAIL.</ins></b></li>
 </ol>
+---
