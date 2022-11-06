@@ -1,6 +1,6 @@
 <h1>Lab 3: Selenium</h1>
 
----
+
 <h2>Model testowania</h2>
 
 <h3>Użyte technologie i biblioteki:</h3>
@@ -17,7 +17,7 @@
 <li>Google Chrome</li>
 </ul>
 
----
+
 <h2>Scenariusze</h2>
 
 <h3>Scenariusz 1 </h3>
