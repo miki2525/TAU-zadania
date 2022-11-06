@@ -1,4 +1,4 @@
-<h1>Lab 3: Selenium</h1>
+#Lab 3: Selenium
 
 <h2>Model testowania</h2>
 
