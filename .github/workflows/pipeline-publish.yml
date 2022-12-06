@@ -6,8 +6,6 @@ name: Deploy lab5.jar
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 permissions:
   packages: write
