@@ -1,0 +1,22 @@
+# This workflow will perform tests using Maven as part of status checks for resolving PRs
+
+name: Perform Tests
+on:
+  pull_request:
+    branches: [ "main" ]
+  
+jobs:
+  TestCheck:
+   runs-on: ubuntu-latest
+   name: TestCheck
+   
+   steps:
+    - uses: actions/checkout@v3
+    - name: Set up JDK 17
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+    
+    - name: Run tests with Maven
+      run: mvn clean test --file 5/pom.xml
