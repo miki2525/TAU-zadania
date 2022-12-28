@@ -17,7 +17,7 @@ public class Game {
         Board board = new TrapsBoard(10);
         Player player = new Player("playa", board);
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String operatingSystem = System.getProperty("os.name");
+//        String operatingSystem = System.getProperty("os.name");
         while (!player.isFinished()) {
 //                if (operatingSystem.contains("Windows")) {
 //            Runtime.getRuntime().exec("cls");
