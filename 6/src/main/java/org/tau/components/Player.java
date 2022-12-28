@@ -28,7 +28,7 @@ public class Player {
                 if (currentRow == 0) {
                     throw new EndOfMapException("Reach the end of the map. Can't move up");
                 }
-                obstacleOccured(currentRow, currentCol);
+                obstacleOccured(currentRow - 1, currentCol);
                 markThePreviousPosition(currentRow, currentCol);
                 --currentRow;
                 pos.setRow(currentRow);
@@ -37,7 +37,7 @@ public class Player {
                 if (currentCol == 0) {
                     throw new EndOfMapException("Reach the end of the map. Can't move left");
                 }
-                obstacleOccured(currentRow, currentCol);
+                obstacleOccured(currentRow, currentCol - 1);
                 markThePreviousPosition(currentRow, currentCol);
                 --currentCol;
                 pos.setCol(currentCol);
@@ -46,7 +46,7 @@ public class Player {
                 if (currentCol == board.getArea()[currentRow].length - 1) {
                     throw new EndOfMapException("Reach the end of the map. Can't move right");
                 }
-                obstacleOccured(currentRow, currentCol);
+                obstacleOccured(currentRow, currentCol + 1);
                 markThePreviousPosition(currentRow, currentCol);
                 ++currentCol;
                 pos.setCol(currentCol);
@@ -55,7 +55,7 @@ public class Player {
                 if (currentRow == board.getArea().length - 1) {
                     throw new EndOfMapException("Reach the end of the map. Can't move down");
                 }
-                obstacleOccured(currentRow, currentCol);
+                obstacleOccured(currentRow + 1, currentCol);
                 markThePreviousPosition(currentRow, currentCol);
                 ++currentRow;
                 pos.setRow(currentRow);
@@ -107,7 +107,7 @@ public class Player {
 
     private void obstacleOccured(int currentRow, int currentCol) {
         if (GameConstants.TRAPS.contains(board.getArea()[currentRow][currentCol])) {
-            throw new ObstacleException("Obstacle occured. Can't move higher");
+            throw new ObstacleException("Obstacle occured. Can't move here");
         }
     }
 
@@ -131,11 +131,13 @@ public class Player {
         return finished;
     }
 
-    public Board getBoard() {
-        return board;
-    }
-
     public void setBoard(Board board) {
         this.board = board;
+        resetPosition();
+    }
+
+    private void resetPosition() {
+        this.pos = new Position();
+        markTheCurrentPosition(pos.getRow(), pos.getCol());
     }
 }

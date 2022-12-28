@@ -3,6 +3,7 @@ package org.tau;
 import org.tau.components.Board;
 import org.tau.components.Player;
 import org.tau.components.boards.SimpleBoard;
+import org.tau.components.boards.TrapsBoard;
 import org.tau.utils.EndOfMapException;
 import org.tau.utils.InvalidInputsException;
 import org.tau.utils.ObstacleException;
@@ -13,7 +14,7 @@ import java.io.InputStreamReader;
 
 public class Game {
     public static void main(String[] args) throws IOException {
-        Board board = new SimpleBoard(5);
+        Board board = new TrapsBoard(10);
         Player player = new Player("playa", board);
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String operatingSystem = System.getProperty("os.name");
